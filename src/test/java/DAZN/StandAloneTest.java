@@ -16,8 +16,9 @@ public class StandAloneTest {
 	{
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		List<WebElement> products = driver.findElements(By.className(".mb-3"));
+		driver.get("https://www.dazn.com/");
+		driver.close();
+		
 		
 	}
 
